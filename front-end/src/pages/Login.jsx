@@ -9,7 +9,6 @@ function Login() {
   const { alertLogin } = useContext(myContext);
   const navigate = useNavigate();
   const user = getUser();
-  console.log(user);
 
   const redirect = () => {
     if (user) navigate('/customer/products');
